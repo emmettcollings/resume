@@ -112,8 +112,8 @@
   \textbf{\Huge \scshape Emmett Collings} \\ \vspace{1pt}
   (587) 227-2882 $|$
   \href{mailto:emmett.collings@gmail.com}{\underline{emmett.collings@gmail.com}} $|$
-  \href{https://www.linkedin.com/in/emmett-collings-a5253121b/}{\underline{linkedin}} $|$
-  \href{https://github.com/emmettcollings}{\underline{github}}
+  \href{https://www.linkedin.com/in/emmett-collings-a5253121b/}{\underline{LinkedIn}} $|$
+  \href{https://github.com/emmettcollings}{\underline{GitHub}}
 \end{center}
 
 
@@ -140,9 +140,11 @@
 {Software Developer Intern}{May 2021 – August 2021}
 {Neo Financial}{Calgary, AB}
 \resumeItemListStart
-\resumeItem{Job description/Award/Achievement 1}
-\resumeItem{Job description/Award/Achievement 2}
-\resumeItem{Job description/Award/Achievement 3}
+\resumeItem{Worked with developer experience (DX) to create internal tools to aid developer efficiency}
+\resumeItem{Created private code coverage tool (github action + web app) that tracked test code coverage of
+  repositories}
+\resumeItem{Created developer contribution tracking web app, which kept leaderboards of code reviews, PRs merged, etc.}
+\resumeItem{Technologies used: Typescript, Node.js, MongoDB, Next.js}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -169,17 +171,31 @@
 
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{J-- Compiler} $|$ \emph{C, flex, bison}}{June 2021 -- Present}
+{\textbf{\texttt{J--} to \texttt{.wat} Compiler} $|$ \emph{C, flex, bison}}{January 2020 -- April 2020}
 \resumeItemListStart
-\resumeItem{Project Description 1}
-\resumeItem{Project Description 2}
+\resumeItem{Term project for compilers course}
+\resumeItem{Compiled from \texttt{J--} (a toy subset of Java) to WebAssembly text format}
+\resumeItem{Used the standard compiler building tools, flex (for lexing), bison (for parsing)}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Web Proxy} $|$ \emph{C, socket programming}}{June 2021 -- Present}
+{\textbf{Web Proxy} $|$ \emph{C, socket programming}}{January 2022}
 \resumeItemListStart
-\resumeItem{Project Description 1}
-\resumeItem{Project Description 2}
+\resumeItem{Intercepted web traffic and replaced all jpgs from incoming HTTP responses to pictures of clowns}
+\resumeItem{Swapped text to various joke phrases as well}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Hacking...} $|$ \emph{C}}{November 2021}
+\resumeItemListStart
+\resumeItem{Security course assignment, less of a big project but it was really cool so included}
+\resumeItem{Exploit several insecure bash tools to spawn a root shell, as well create your own insecure tool. Exploits used
+  included buffer overflows, format string vulnerabilities, timing attacks, environment manipulation.}
+\resumeItem{The vulnerable tool I made counted the number of lines in the file. The vulnerability exploits a call to
+  \texttt{strlen()} that would store its output in an \texttt{int}.}
+\resumeItem{Since the return type of \texttt{strlen()} is \texttt{size\_t}, this allows the \texttt{int} to be
+  overflowed, allowing an attacker to bypass a length check and subsequently overflow a buffer to modify return
+  addresses etc.}
 \resumeItemListEnd
 
 
@@ -201,13 +217,22 @@
 %-----------AWARDS/INTERESTS-----------
 \section{Awards \& Interests}
 
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-        \textbf{Languages}{: C, C++, Typescript/Javascript, Java, Python} \\
-        \textbf{Libraries/Frameworks}{: React.js, Next.js, X, X} \\
-        \textbf{Developer Tools}{: bash, git, github actions} \\
-        \textbf{Applications}{: Mongodb, MySQL, X}
-        }}
-\end{itemize}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Awards}}{}
+\resumeItemListStart
+\resumeItem{National AP Scholar (2015)}
+\resumeItem{National Swimming Championship Qualifier (2013-16)}
+\resumeItem{High School Div 3 City Champion -- Volleyball (2014)}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Interests}}{}
+\resumeItemListStart
+\resumeItem{Reading}
+\resumeItem{Sports -- volleyball, badminton, swimming, climbing}
+\resumeItem{Outdoor -- backpacking, scrambling, canoeing}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 \end{document}
