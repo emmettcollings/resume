@@ -2,6 +2,8 @@
 % Resume in Latex
 % Author : Sidratul Muntaha Ahmed
 % License : MIT
+%
+% Shamelessly used as a template by me, Emmett Collings
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -106,12 +108,12 @@
 
 %----------HEADING----------
 
-
 \begin{center}
-    \textbf{\Huge \scshape Name} \\ \vspace{1pt}
-    \small 00-000-0000 $|$ \href{mailto:x@xcom}{\underline{x.x.com}} $|$
-    \href{https://linkedin.com/in/x}{\underline{linkedin.com/in/x}} $|$
-    \href{https://github.com/x}{\underline{github.com/x}}
+  \textbf{\Huge \scshape Emmett Collings} \\ \vspace{1pt}
+  (587) 227-2882 $|$
+  \href{mailto:emmett.collings@gmail.com}{\underline{emmett.collings@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/emmett-collings-a5253121b/}{\underline{LinkedIn}} $|$
+  \href{https://github.com/emmettcollings}{\underline{GitHub}}
 \end{center}
 
 
@@ -119,13 +121,13 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{X University}{Melbourne, VIC}
-{Bachelor of X}{Expected December 2022}
+{University of Calgary}{Graduating December 2022}
+{Bachelor of Science, Major in Computer Science}{Calgary, AB}
 \resumeItemListStart
-\resumeItem{WAM/GPA: X}
-\resumeItem{Award/Achievement/Involvement 1}
-\resumeItem{Award/Achievement/Involvement 2}
-\resumeItem{Award/Achievement/Involvement 3}
+\resumeItem{GPA: 3.9/4.0}
+\resumeItem{Concentration in theoretical computer science}
+\resumeItem{Elective Highlights: Computer Security, Distributed and Randomized Algorithms, Compiler Construction,
+  Database Design, Networks}
 
 \resumeItemListEnd
 
@@ -136,85 +138,100 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Role 1}{November 2021 – Present}
-{Company 1}{Melbourne, VIC}
+{Software Developer Intern}{May 2021 – August 2021}
+{Neo Financial}{Calgary, AB}
 \resumeItemListStart
-\resumeItem{Job description/Award/Achievement 1}
-\resumeItem{Job description/Award/Achievement 2}
-\resumeItem{Job description/Award/Achievement 3}
+\resumeItem{Worked with developer experience (DX) to create internal tools to aid developer efficiency}
+\resumeItem{Created private code coverage tool (github action + web app) that tracked test code coverage of
+  repositories}
+\resumeItem{Created developer contribution tracking web app, which kept leaderboards of code reviews, PRs merged, etc.}
+\resumeItem{Technologies used: Typescript, Node.js, MongoDB, Next.js}
 \resumeItemListEnd
 
 \resumeSubheading
-{Role 2}{November 2021 – Present}
-{Company 2}{Melbourne, VIC}
+{Private Tutor}{September 2017 – June 2018}
+{Self Employed}{Calgary, AB}
 \resumeItemListStart
-\resumeItem{Job description/Award/Achievement 1}
-\resumeItem{Job description/Award/Achievement 2}
-\resumeItem{Job description/Award/Achievement 3}
+\resumeItem{Specialized in high school physics and mathematics}
+\resumeItemListEnd
+
+\resumeSubheading
+{Engineering Student}{May 2017 – August 2017}
+{Forge Oil \& Gas}{Calgary, AB}
+\resumeItemListStart
+\resumeItem{Reviewed an maintained well files, inflow performance relationship curves, generated well bore diagrams}
+\resumeItem{Occasional field trips to examine well operations}
+\resumeItem{Assisted with general non-engineering office activities}
 \resumeItemListEnd
 
 
 \resumeSubHeadingListEnd
 
-%-----------COMMUNITY AND LEADERSHIP-----------
-\section{Community \& Leadership}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{Role 1}{November 2021 – Present}
-{Club/Organization 1}{Melbourne, VIC}
-\resumeItemListStart
-\resumeItem{Job description/Award/Achievement 1}
-\resumeItem{Job description/Award/Achievement 2}
-\resumeItem{Job description/Award/Achievement 3}
-\resumeItemListEnd
-
-\resumeSubheading
-{Role 2}{November 2021 – Present}
-{Club/Organization 2}{Melbourne, VIC}
-\resumeItemListStart
-\resumeItem{Job description/Award/Achievement 1}
-\resumeItem{Job description/Award/Achievement 2}
-\resumeItem{Job description/Award/Achievement 3}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
-
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{Project Title 1} $|$ \emph{Technologies used}}{June 2021 -- Present}
-\resumeItemListStart
-\resumeItem{Project Description 1}
-\resumeItem{Project Description 2}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Project Title 2} $|$ \emph{Technologies used}}{June 2021 -- Present}
-\resumeItemListStart
-\resumeItem{Project Description 1}
-\resumeItem{Project Description 2}
-\resumeItemListEnd
-
-
-\resumeSubHeadingListEnd
-
-
-%
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-          \textbf{Languages}{: X, X, X} \\
-          \textbf{Frameworks}{: X, X, X} \\
-          \textbf{Developer Tools}{: X, X, X} \\
-          \textbf{Libraries}{: X, X, X} \\
-          \textbf{Applications}{: X, X, X}
-          }}
+  \small{\item{
+        \textbf{Languages}{: C, C++, Typescript/Javascript, Java, Python} \\
+        \textbf{Libraries/Frameworks}{: Node.js, React.js, Next.js} \\
+        \textbf{Developer Tools}{: bash, git, github actions, Linux, Windows} \\
+        \textbf{Databases}{: Mongodb, MySQL}
+        }}
 \end{itemize}
 
+%-----------PROJECTS-----------
+\section{Technical Projects/Assignments}
 
-%-------------------------------------------
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\texttt{J--} to \texttt{.wat} Compiler} $|$ \emph{C, flex, bison}}{January 2020 -- April 2020}
+\resumeItemListStart
+\resumeItem{Term project for compilers course}
+\resumeItem{Compiled from \texttt{J--} (a toy subset of Java) to WebAssembly text format}
+\resumeItem{Used the standard compiler building tools, flex (for lexing), bison (for parsing)}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Web Proxy} $|$ \emph{C, socket programming}}{January 2022}
+\resumeItemListStart
+\resumeItem{Intercepted web traffic and replaced all jpgs from incoming HTTP responses to pictures of clowns}
+\resumeItem{Swapped text to various joke phrases as well}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Hacking...} $|$ \emph{C}}{November 2021}
+\resumeItemListStart
+\resumeItem{Security course assignment, less of a big project but it was really cool so included}
+\resumeItem{Exploit several insecure bash tools to spawn a root shell, as well create your own insecure tool. Exploits used
+  included buffer overflows, format string vulnerabilities, timing attacks, environment manipulation.}
+\resumeItem{The vulnerable tool I made counted the number of lines in the file. The vulnerability exploits a call to
+  \texttt{strlen()} that would store its output in an \texttt{int}.}
+\resumeItem{Since the return type of \texttt{strlen()} is \texttt{size\_t}, this allows the \texttt{int} to be
+  overflowed, allowing an attacker to bypass a length check and subsequently overflow a buffer to modify return
+  addresses etc.}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%-----------AWARDS/INTERESTS-----------
+\section{Awards \& Interests}
+
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Awards}}{}
+\resumeItemListStart
+\resumeItem{National AP Scholar (2015)}
+\resumeItem{National Swimming Championship Qualifier (2013-16)}
+\resumeItem{High School Div 3 City Champion -- Volleyball (2014)}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Interests}}{}
+\resumeItemListStart
+\resumeItem{Reading -- Classical literature, non-fiction}
+\resumeItem{Sports -- volleyball, badminton, swimming, climbing}
+\resumeItem{Outdoor -- backpacking, scrambling, canoeing}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
 \end{document}
