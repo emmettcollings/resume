@@ -92,7 +92,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{}{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -120,6 +120,7 @@
 
 %-----------EDUCATION-----------
 \section{Education}
+
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of Calgary}{September 2019 – December 2022}
@@ -136,7 +137,23 @@
 
 %-----------EXPERIENCE-----------
 \section{Experience}
+
 \resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Developer}{May 2022 – August 2022}
+{Nobal Technologies}{Calgary, AB}
+\resumeItemListStart
+\resumeItem{Worked with hardware and software to create and maintain smart mirror devices and their applications}
+\resumeItem{Had high levels of autonomy in creating new integrations with third party software such as point-of-sale systems}
+\resumeItem{Large role in creation of smart mirror hospitality application}
+\resumeItemListStart
+\resumeSubItem{Contributed to system design for major rewrite of existing codebase for previous applications}
+\resumeSubItem{Hospitality app provides functionality such as check in/out, ride share calling, room service, ticket booking, etc.}
+\resumeSubItem{Integrated with several third party software platforms to provide the above functionality}
+\resumeItemListEnd
+\resumeItem{Technologies used: C++, Qt, QML}
+\resumeItemListEnd
 
 \resumeSubheading
 {Software Developer Intern}{May 2021 – August 2021}
@@ -156,17 +173,9 @@
 \resumeItem{Specialized in high school physics and mathematics}
 \resumeItemListEnd
 
-\resumeSubheading
-{Engineering Student}{May 2017 – August 2017}
-{Forge Oil \& Gas}{Calgary, AB}
-\resumeItemListStart
-\resumeItem{Reviewed an maintained well files, inflow performance relationship curves, generated well bore diagrams}
-\resumeItem{Occasional field trips to examine well operations}
-\resumeItem{Assisted with general non-engineering office activities}
-\resumeItemListEnd
-
 
 \resumeSubHeadingListEnd
+
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
@@ -179,10 +188,12 @@
         }}
 \end{itemize}
 
+
 %-----------PROJECTS-----------
 \section{Technical Projects/Assignments}
 
 \resumeSubHeadingListStart
+
 \resumeProjectHeading
 {\textbf{\texttt{J--} to \texttt{.wat} Compiler} $|$ \emph{C, flex, bison}}{January 2020 -- April 2020}
 \resumeItemListStart
