@@ -127,7 +127,7 @@
 {Bachelor of Science, Major in Computer Science}{Calgary, AB}
 \resumeItemListStart
 \resumeItem{GPA: 3.8/4.0}
-\resumeItem{Concentration in theoretical computer science}
+\resumeItem{Theoretical computer science focus}
 \resumeItem{Elective Highlights: Computer Security, Distributed and Randomized Algorithms, Compiler Construction,
   Database Design, Network Analysis, Retrogames}
 
@@ -141,7 +141,7 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Software Developer}{May 2022 – August 2022}
+{C++ Software Developer}{May 2022 – August 2022}
 {Nobal Technologies}{Calgary, AB}
 \resumeItemListStart
 \resumeItem{Worked with hardware and software to create and maintain smart mirror devices and their applications}
@@ -181,43 +181,39 @@
 
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Languages}{: C++, Python, Typescript/Javascript, C, Java} \\
-        \textbf{Libraries/Frameworks}{: Qt, Node.js, Jupyter} \\
-        \textbf{Developer Tools}{: bash, git, Linux, Windows} \\
-        \textbf{Databases}{: Mongodb, MySQL}
-        }}
+                \textbf{Languages}{: C++, Python, Assembly, Typescript/Javascript, C, Java} \\
+                \textbf{Libraries/Frameworks}{: Qt, Node.js, Jupyter} \\
+                \textbf{Developer Tools}{: git, bash, Linux, Windows} \\
+                \textbf{Databases}{: Mongodb, MySQL}
+          }}
 \end{itemize}
 
 
 %-----------PROJECTS-----------
-\section{Technical Projects}
+\section{Research \& Projects}
 
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{NHL Linemates Network $|$ \emph{Python, Jupyter}}}{September 2022 -- December 2022}
+{\textbf{NHL Linemates Network $|$} \emph{Python, Jupyter}}{September 2022 -- December 2022}
 \resumeItemListStart
-\resumeItem{An analysis of the effects}
+\resumeItem{A network analysis of the effects that hockey players have on their linemates}
+\resumeItem{The links between players are invesigated using network science techniques such as community detection and degree centrality to determine players that effectively improve their teammates}
+\resumeItem{Makes use of data and network science as well as statistics for analysis}
+\resumeItem{Results summarized in an academic paper which can be found on my GitHub}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Web Proxy} $|$ \emph{C, socket programming}}{January 2022}
+{\textbf{Bubbie-VI} $|$ \emph{6502 Assembly}}{September 2022 -- December 2022}
 \resumeItemListStart
-\resumeItem{Intercepted web traffic and replaced all jpgs from incoming HTTP responses to pictures of clowns}
-\resumeItem{Swapped text to various joke phrases as well}
+\resumeItem{A game written in 6502 assembly for the Commodore VIC-20}
+\resumeItem{Players must retrieve lost pet ducks in a dungeon while dodging enemies}
+\resumeItem{Resource constrained (3.5K of memory available on the VIC-20)}
+\resumeItemListStart
+\resumeSubItem{Created ad hoc data compression schemes}
+\resumeSubItem{Required efficient and small code}
+\resumeSubItem{Uses self modification on code and data to increase space efficiency further}
 \resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Hacking...} $|$ \emph{C}}{November 2021}
-\resumeItemListStart
-\resumeItem{Security course assignment, less of a big project but it was really cool so included}
-\resumeItem{Exploit several insecure bash tools to spawn a root shell, as well create your own insecure tool. Exploits used
-  included buffer overflows, format string vulnerabilities, timing attacks, environment manipulation.}
-\resumeItem{The vulnerable tool I made counted the number of lines in the file. The vulnerability exploits a call to
-  \texttt{strlen()} that would store its output in an \texttt{int}.}
-\resumeItem{Since the return type of \texttt{strlen()} is \texttt{size\_t}, this allows the \texttt{int} to be
-  overflowed, allowing an attacker to bypass a length check and subsequently overflow a buffer to modify return
-  addresses etc.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
