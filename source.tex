@@ -143,45 +143,29 @@
 {Software Developer - Safety Critical Systems}{May 2023 – June 2025}
 {Hexagon A\&P}{Calgary, AB}
 \resumeItemListStart
-\resumeItem{Developed GNSS corrections integrity monitoring application in C++ for use in autonomous driving technologies}
-\resumeItemListStart
-\resumeSubItem{Contributed to all stages of project, including requirements gathering, architectural and unit design, implementation, and testing}
-\resumeItemListEnd
-\resumeItem{Participated in internal and external audits to ensure compliance with ASPICE and ISO 26262 safety standards}
-\resumeItem{Led improvement and creation of in house development tools aimed at accelerating development, improving code quality, and adhering to industry safety standards}
-\resumeItem{Technologies used: C++, CMake, Python, Cantata, Perforce}
+\resumeItem{One of the original developers of a greenfield C++ application for monitoring the integrity of GNSS corrections used in autonomous driving technologies}
+\resumeItem{Implemented application components spanning data processing, inter-application communication, input/output handling, and error handling. Implemented a decoder for the application's primary custom binary data format and contributed to its encoder, developing an in-house bit-array library to support bit-level data manipulation.}
+\resumeItem{Developed detailed software requirements (ASPICE SWE.1) from established system-level concepts and collaborated on software architecture design, serving as the primary author of the architecture document (SWE.2). Participated in internal and external ASPICE and ISO 26262 audits.}
+\resumeItem{Performed unit and integration testing and developed CI tooling for automated test execution and code coverage measurement.}
+\resumeItem{Primary developer of the application's CMake build scripts, contributed to maintaining the company's Python-based build tooling, and contributed to optimizing Jenkins CI pipelines.}
 \resumeItemListEnd
 
 \resumeSubheading
 {C++ Software Developer}{May 2022 – August 2022}
 {Nobal Technologies}{Calgary, AB}
 \resumeItemListStart
-\resumeItem{Worked with hardware and software to create and maintain smart mirror devices and their applications}
-\resumeItem{Large role in creation of smart mirror hospitality application}
-\resumeItemListStart
-\resumeSubItem{Contributed to system design for major rewrite of existing codebase for previous applications}
-\resumeSubItem{Hospitality app provides functionality such as check in/out, ride share calling, room service, ticket booking}
-\resumeSubItem{Integrated with several third party software platforms to provide the above functionality}
-\resumeItemListEnd
-\resumeItem{Technologies used: C++, Qt, QML}
+\resumeItem{Developed and maintained software for smart mirror devices using C++, Qt, and QML.}
+\resumeItem{Played a major role in designing and implementing a hospitality application as part of a rewrite of an existing codebase.}
+\resumeItem{Integrated third-party services to support hotel functionality, including check-in/out, ride-sharing, and room service.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Software Developer Intern}{May 2021 – August 2021}
 {Neo Financial}{Calgary, AB}
 \resumeItemListStart
-\resumeItem{Worked with developer experience (DX) to create internal tools to aid developer efficiency}
-\resumeItem{Created private code coverage tool (github action + web app) that tracked test code coverage of
-  repositories}
-\resumeItem{Created developer contribution tracking web app, which kept leaderboards of code reviews, PRs merged, etc.}
-\resumeItem{Technologies used: Typescript, Node.js, MongoDB, Next.js}
-\resumeItemListEnd
-
-\resumeSubheading
-{Private Tutor}{September 2017 – June 2018}
-{Self Employed}{Calgary, AB}
-\resumeItemListStart
-\resumeItem{Specialized in high school physics and mathematics}
+\resumeItem{Developed an internal code coverage tracking solution consisting of a Github Action and web application.}
+\resumeItem{Built a developer contribution tracking application to monitor code reviews, merged pull requests, and other engineering contributions.}
+\resumeItem{Both of these tools were adopted in every repository at Neo Financial.}
 \resumeItemListEnd
 
 
@@ -193,9 +177,11 @@
 
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-                \textbf{Languages}{: C++, C, Python, Assembly, Typescript/Javascript} \\
-                \textbf{Developer Tools}{: git, Perforce, CMake, Jenkins, Artifactory, Linux, Windows} \\
-                \textbf{Other Training}{: ASPICE, MISRA C++, GNSS Overview}
+                \textbf{Languages}{: C++, C, Python} \\
+                \textbf{Testing}{: Cantata, Google Test, Catch2} \\
+                \textbf{Tools}{: Git, CMake, Perforce, Jenkins} \\
+                \textbf{Platforms}{: Linux, Windows} \\
+                \textbf{Standards}{: ASPICE, ISO 26262, MISRA C++}
           }}
 \end{itemize}
 
@@ -208,12 +194,10 @@
 \resumeProjectHeading
 {\textbf{Bubbie-VI} $|$ \emph{6502 Assembly}}{September 2022 -- December 2022}
 \resumeItemListStart
-\resumeItem{A game written in 6502 assembly for the Commodore VIC-20}
-\resumeItem{Players must retrieve lost pet ducks in a dungeon while dodging enemies}
-\resumeItem{Resource constrained (3.5K of memory available on the VIC-20)}
+\resumeItem{Developed a game in 6502 assembly for the Commodore VIC-20}
+\resumeItem{Operated with strict resource constraints (3.5K of memory available on the VIC-20)}
 \resumeItemListStart
-\resumeSubItem{Created ad hoc data compression schemes}
-\resumeSubItem{Required efficient and small code}
+\resumeSubItem{Designed custom data compression schemes to minimize memory usage}
 \resumeSubItem{Uses self modification on code and data to increase space efficiency further}
 \resumeItemListEnd
 \resumeItemListEnd
@@ -221,17 +205,16 @@
 \resumeProjectHeading
 {\textbf{NHL Linemates Network $|$} \emph{Python, Jupyter}}{September 2022 -- December 2022}
 \resumeItemListStart
-\resumeItem{A network analysis of the effects that hockey players have on their linemates}
-\resumeItem{The links between players are invesigated using network science techniques such as community detection and degree centrality to determine players that effectively improve their teammates}
-\resumeItem{Makes use of data and network science as well as statistics for analysis}
-\resumeItem{Results summarized in an academic paper which can be found on my GitHub}
+\resumeItem{Analyzed NHL player relationships using network science and statistical techniques.}
+\resumeItem{Applied community detection and degree centrality to investigate player interactions and identify players who positively influence their linemates.}
+\resumeItem{Results are summarized in an academic-style research paper (available on GitHub)}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Web Proxy} $|$ \emph{C, socket programming}}{January 2022}
 \resumeItemListStart
-\resumeItem{Intercepts web traffic and replaced all jpgs from incoming HTTP responses to pictures of clowns}
-\resumeItem{Swapped plaintext to various joke phrases as well}
+\resumeItem{Developed an HTTP proxy in C using socket programming.}
+\resumeItem{Intercepted HTTP responses and modified their content6s, replacing JPEG images and plaintext with custom content.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -244,9 +227,8 @@
 
 \resumeProjectHeading{\textbf{Interests}}{}
 \resumeItemListStart
-\resumeItem{Reading -- Classics, non-fiction}
-\resumeItem{Sports -- rock climbing, volleyball, badminton, swimming}
-\resumeItem{Outdoor -- rock climbing, backpacking, scrambling}
+\resumeItem{Reading (classics, non-fiction)}
+\resumeItem{Sports and outdoor activities (climbing, volleyball, badminton, swimming, and backpacking)}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -254,9 +236,6 @@
 \resumeItemListStart
 \resumeItem{Hexagon A\&P High Five - Given to recognize employees internally (2025)}
 \resumeItem{Deans List (2018, W2020, W2021)}
-\resumeItem{National AP Scholar (2015)}
-\resumeItem{National Swimming Championship Qualifier (2013-16)}
-\resumeItem{High School Div 3 City Champion -- Volleyball (2014)}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
